@@ -7,22 +7,22 @@ import java.util.Objects;
 public class Seller implements Serializable {
 
     private Integer id;
-    private String nome;
+    private String name;
     private String email;
-    private Date aniversario;
-    private Double salario;
+    private Date birthDate;
+    private Double baseSalary;
 
     private Department department;
 
     public Seller() {
 
     }
-    public Seller(Integer id, String nome, String email, Date aniversario, Double salario, Department department) {
+    public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
         this.id = id;
-        this.nome = nome;
+        this.name = name;
         this.email = email;
-        this.aniversario = aniversario;
-        this.salario = salario;
+        this.birthDate = birthDate;
+        this.baseSalary = baseSalary;
         this.department = department;
     }
 
@@ -34,12 +34,12 @@ public class Seller implements Serializable {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {
@@ -50,20 +50,20 @@ public class Seller implements Serializable {
         this.email = email;
     }
 
-    public Date getAniversario() {
-        return aniversario;
+    public Date getBirthDate() {
+        return birthDate;
     }
 
-    public void setAniversario(Date aniversario) {
-        this.aniversario = aniversario;
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
     }
 
-    public Double getSalario() {
-        return salario;
+    public Double getBaseSalary() {
+        return baseSalary;
     }
 
-    public void setSalario(Double salario) {
-        this.salario = salario;
+    public void setBaseSalary(Double baseSalary) {
+        this.baseSalary = baseSalary;
     }
 
     public Department getDepartment() {
@@ -91,10 +91,10 @@ public class Seller implements Serializable {
     public String toString() {
         return "Seller{" +
                 "id=" + id +
-                ", nome='" + nome + '\'' +
+                ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", aniversario=" + aniversario +
-                ", salario=" + salario +
+                ", birthDate=" + birthDate +
+                ", baseSalary=" + baseSalary +
                 ", department=" + department +
                 '}';
     }

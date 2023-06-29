@@ -6,14 +6,14 @@ import java.util.Objects;
 public class Department implements Serializable {
 
     private Integer id;
-    private String nome;
+    private String name;
 
     public Department(){
 
     }
     public Department(Integer id, String nome) {
         this.id = id;
-        this.nome = nome;
+        this.name = nome;
     }
 
     public Integer getId() {
@@ -24,12 +24,12 @@ public class Department implements Serializable {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Department implements Serializable {
     public String toString() {
         return "Department{" +
                 "id=" + id +
-                ", nome='" + nome + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
