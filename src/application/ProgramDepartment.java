@@ -23,5 +23,11 @@ public class ProgramDepartment {
         for (Department dep : list){
             System.out.println(dep);
         }
+
+        System.out.println("\n==== Teste 4: Department Insert ====");
+        Department newDepartment = new Department(null, "Game");
+        departmentDao.insert(newDepartment);
+        System.out.println("Inserido! Departamento = " + newDepartment.getName() + " Id = " + newDepartment.getId());
+
     }
     }
